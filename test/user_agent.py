@@ -10,7 +10,7 @@ from subprocess import check_output
 
 import pytest
 import six
-from platinum import InvalidOption, generate_user_agent
+from platinum2 import InvalidOption, generate_user_agent
 
 
 def test_it():

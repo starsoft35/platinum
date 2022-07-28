@@ -1,5 +1,5 @@
 # Platinum
-[![License](https://img.shields.io/badge/license-Apache_2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![PyPI version](https://img.shields.io/pypi/v/platinum.svg)](https://pypi.org/project/platinum/) [![Wheel](https://img.shields.io/pypi/wheel/platinum.svg)](https://pypi.org/project/platinum/)
+[![License](https://img.shields.io/badge/license-Apache_2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![PyPI version](https://img.shields.io/pypi/v/platinum2.svg)](https://pypi.org/project/platinum2/) [![Wheel](https://img.shields.io/pypi/wheel/platinum2.svg)](https://pypi.org/project/platinum2/)
 
 
 > Chromium - Frequently used google chrome commands mappings.
@@ -13,7 +13,7 @@ Last update occurred on **2018-06-08** from `https://peter.sh/experiments/chromi
 ## Usage Example
 
 ```python
-from platinum import Chromium
+from platinum2 import Chromium
 from selenium import webdriver
 
 options = webdriver.ChromeOptions()
@@ -53,7 +53,7 @@ Support:
 
 ## Usage Example
 ```python
->>> from platinum import generate_user_agent
+>>> from platinum2 import generate_user_agent
 >>> generate_user_agent()
 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3504.86 Safari/537.36'
 >>> generate_user_agent(os=('mac', 'linux'))
@@ -88,8 +88,8 @@ Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_3 like Mac OS X) AppleWebKit/602.2.14 (KH
 ## Installation
 
 ```shell
-pip install -U platinum
+pip install -U platinum2
 ```
 
 
-## [Change Log](https://github.com/fjwCode/platinum/blob/master/CHANGELOG.md)
+## [Change Log](https://github.com/fjwCode/platinum2/blob/master/CHANGELOG.md)

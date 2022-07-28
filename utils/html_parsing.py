@@ -22,7 +22,7 @@ from os import remove
 from requests_html import HTML
 
 
-# Produce platinum/chromium.py
+# Produce platinum2/chromium.py
 def html_parsing_chromium(fp=r'utils/commands.py'):
     p = """# Licensed to the White Turing under one or more
     # contributor license agreements.  See the NOTICE file
@@ -72,7 +72,7 @@ def html_parsing_chromium(fp=r'utils/commands.py'):
         print(f'    {k} = {i.strip()!r}   # {j.strip()}', file=open(fp, 'a', encoding='utf-8'))
 
 
-# Produce platinum/data/ios.json
+# Produce platinum2/data/ios.json
 # https://en.wikipedia.org/wiki/IOS_version_history
 def html_parsing_ios(fp=r'utils/ios.json'):
     import json
@@ -91,5 +91,5 @@ def html_parsing_ios(fp=r'utils/ios.json'):
 
 
 if __name__ == '__main__':
-    # html_parsing_chromium('platinum/chromium.py')
-    html_parsing_ios('platinum/data/ios.json')
+    # html_parsing_chromium('platinum2/chromium.py')
+    html_parsing_ios('platinum2/data/ios.json')

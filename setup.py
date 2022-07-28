@@ -20,7 +20,7 @@
 
 '''
 python setup.py sdist
-pip install dist/platinum-1.4.0.tar.gz
+pip install dist/platinum2-1.4.0.tar.gz
 python setup.py bdist_wheel
 pip install twine
 twine upload dist/*
@@ -30,7 +30,7 @@ import os.path
 
 import setuptools
 
-from platinum import __version__
+from platinum2 import __version__
 from setuptools import setup
 
 # Import the README and use it as the long-description.
@@ -49,13 +49,13 @@ setup(
     description='Frequently used google chrome commands mappings. A User-Agent generator. All for automation.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/starsoft35/platinum',
+    url='https://github.com/starsoft35/platinum2',
     keywords=['chromium', 'automation', 'testing', 'user-agent'],
     include_package_data=True,
     install_requires=['six'],
     entry_points={
         'console_scripts': [
-            'gua = platinum.console:script_gua',
+            'gua = platinum2.console:script_gua',
         ],
     },
     classifiers=[
