@@ -28,6 +28,8 @@ twine upload dist/*
 
 import os.path
 
+import setuptools
+
 from platinum import __version__
 from setuptools import setup
 
@@ -38,16 +40,16 @@ with open(os.path.join(cwd, 'README.md'), encoding='utf-8') as f:
 
 # Where the magic happens:
 setup(
-    name='platinum',
-    packages=['platinum'],
+    name='platinum2',
+    packages=setuptools.find_packages(),
     version=__version__,
     license='Apache 2.0',
-    author='White Turing',
-    author_email='fujiawei@stu.hznu.edu.cn',
+    author='Zhou Ping',
+    author_email='b2b35@126.com',
     description='Frequently used google chrome commands mappings. A User-Agent generator. All for automation.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/fjwCode/platinum',
+    url='https://github.com/starsoft35/platinum',
     keywords=['chromium', 'automation', 'testing', 'user-agent'],
     include_package_data=True,
     install_requires=['six'],
