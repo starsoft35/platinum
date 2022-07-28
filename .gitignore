@@ -8,3 +8,9 @@ build/
 
 # project
 /.pytest_cache/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
